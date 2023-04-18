@@ -1,8 +1,9 @@
 import React from 'react'
+import Hero from './Hero'
 
 const Home = () => {
   return (
-    <div className='font-cinzel'>Home</div>
+    <div><Hero /></div>
   )
 }
 

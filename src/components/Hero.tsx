@@ -1,0 +1,35 @@
+import styles from "../style";
+import { logo } from "../assets";
+import Logo from "./Logo";
+import Stats from "./Stats";
+
+const Hero = () => {
+  return (
+    <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY} bg-black text-white`}>
+        <div className={`flex-1 flex-col ${styles.flexCenter}`}>
+          <div className={`${styles.flexCenter} z-10`}>
+            <Logo />
+          </div>
+          <div className="py-12 px-64 font-cinzel">
+            <p className={`${styles.paragraph}`}>
+              <span>HKV Gloves, a </span>
+              <span>4x</span>
+              <span>award-winning brand of quality gloves, was established in 1999. &nbsp; We are known for our iconic </span>
+              <span>HKV1</span>
+              <span>, endorsed by the 5x Boxing World Champion Saitama. &nbsp; We know a thing or two about making the best gloves
+                for any occasion, be it training or crushing your opponent. &nbsp; We also offer boxing classes with world class coaches
+                to forge you into a legend in the ring. &nbsp; We are here with you every step of the way on your boxing journey.
+              </span>
+            </p>
+          </div>
+          <div>
+            <Stats />
+          </div>
+        </div>
+    </section>
+  )
+}
+
+// Add a background with a glow grandient
+
+export default Hero
