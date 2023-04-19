@@ -1,11 +1,11 @@
-import styles from "../style";
-import { logo } from "../assets";
+import styles from "../../style";
+import { logo } from "../../assets";
 import Logo from "./Logo";
 import Stats from "./Stats";
 
 const Hero = () => {
   return (
-    <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY} bg-black text-white`}>
+    <section id="home-hero" className={`flex md:flex-row flex-col ${styles.paddingY} bg-black text-white`}>
         <div className={`flex-1 flex-col ${styles.flexCenter}`}>
           <div className={`${styles.flexCenter} z-10`}>
             <Logo />

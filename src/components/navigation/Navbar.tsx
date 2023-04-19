@@ -1,7 +1,7 @@
-import { navLinks } from "../data";
+import { navLinks } from "../../data";
 import { Outlet, NavLink } from "react-router-dom";
 import { DoubleGlove } from "./DoubleGlove";
-import styles from "../style";
+import styles from "../../style";
 
 const Navbar = () => {
   return (

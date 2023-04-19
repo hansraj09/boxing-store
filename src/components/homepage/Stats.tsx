@@ -1,6 +1,6 @@
 import React from 'react'
-import { stats } from '../data'
-import styles from '../style'
+import { stats } from '../../data'
+import styles from '../../style'
 
 const Stats = () => {
   return (
