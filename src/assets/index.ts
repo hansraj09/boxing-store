@@ -5,7 +5,9 @@ import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";
 import linkedin from "./linkedin.svg";
 import twitter from "./twitter.svg";
-import double_gloves from "./double_gloves.svg"
+import blue_gloves from "./blue_gloves.jpg";
+import red_gloves from "./red_gloves.jpg";
+import man_black_bg from "./man_black_bg.jpg"
 
 export {
   logo,
@@ -15,5 +17,7 @@ export {
   instagram,
   linkedin,
   twitter,
-  double_gloves,
+  blue_gloves,
+  red_gloves,
+  man_black_bg,
 };

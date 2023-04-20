@@ -1,4 +1,4 @@
-import React from 'react'
+import Class from './Class'
 import Hero from './Hero'
 import Shop from './Shop'
 
@@ -7,6 +7,7 @@ const Home = () => {
     <div>
       <Hero />
       <Shop />
+      <Class />
     </div>
   )
 }
