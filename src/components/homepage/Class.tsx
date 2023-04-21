@@ -10,7 +10,7 @@ const Class = () => {
       </div>
       <div className={`${layout.sectionInfo} px-12`}>
         <h2 className={styles.heading2}>Become a legend in the ring</h2>
-          <p className={`${styles.paragraph} mt-2`}>
+          <p className={`${styles.paragraph} mt-2 text-justify`}>
             <span>
               Join the best boxing classes in the field, taught by world-class 
               coaches, in world-class training facilities.  We have everything,

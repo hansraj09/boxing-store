@@ -7,7 +7,7 @@ const Shop = () => {
     <section id='home-shop' className={`${layout.section} bg-white text-black space-x-6`}>
 			<div className={`${layout.sectionInfo} px-12`}>
 				<h2 className={styles.heading2Black}>Train in comfort and style</h2>
-				<p className={`${styles.paragraphBlack} mt-2`}>
+				<p className={`${styles.paragraphBlack} mt-2 text-justify`}>
 					<span>
 						The latest summer collection just launched, complete with a new line 
 						of performance gloves, 
