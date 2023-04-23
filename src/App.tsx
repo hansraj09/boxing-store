@@ -3,7 +3,7 @@ import Home from "./components/homepage/Home";
 import Navbar from "./components/navigation/Navbar";
 import Classes from './components/Classes';
 import Contact from './components/Contact';
-import Store from './components/Store';
+import Store from './components/storepage/Store';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
