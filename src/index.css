@@ -193,13 +193,46 @@
   }
 }
 
-
 svg:hover #glove_right{
   animation: right_movement 0.5s ease both;
 }
-
 
 svg:hover #glove_left{
   animation: left_movement 0.5s ease both;
 }
 
+@keyframes draw_path {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes draw_path_outer {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
+#outer_ring {
+  opacity: 0;
+  animation: draw_path_outer 2s ease-in forwards 1s;
+}
+
+#logo_name {
+  stroke-dasharray: 468.354736328125px;
+  stroke-dashoffset: 468.354736328125px;
+  animation: draw_path 3s forwards 1s;
+
+}
+
+#logo_slogan {
+  stroke-dasharray: 1297.8370361328125px;
+  stroke-dashoffset: 1297.8370361328125px;
+  animation: draw_path 10s forwards 1s;
+}
