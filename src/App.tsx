@@ -1,7 +1,7 @@
 import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom';
 import Home from "./components/homepage/Home";
 import Navbar from "./components/navigation/Navbar";
-import Classes from './components/Classes';
+import Classes from './components/classespage/Classes';
 import Contact from './components/Contact';
 import Store from './components/storepage/Store';
 
