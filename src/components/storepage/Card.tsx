@@ -11,15 +11,15 @@ type cardProps = {
 
 const Card = ({id, image, title, weight, color, price } : cardProps) => {
   return (
-    <div className='flex flex-col'>
-      <img src={image} alt={id} />
-      <div className='flex flex-row'>
+    <div className='flex flex-col my-6'>
+      <img src={image} alt={id} className="h-[20rem] w-[20rem]" />
+      <div className='flex flex-row justify-between'>
         <div className='flex flex-col'>
-          <h2>{title}</h2>
-          <h1>{weight}</h1>
-          <h1>{color}</h1>
+          <h2 className="font-cinzel font-semibold text-black">{title}</h2>
+          <h1 className="font-cinzel text-black">{weight}</h1>
+          <h1 className="font-cinzel text-black">{color}</h1>
         </div>
-        <h4>{price}</h4>
+        <h4 className="font-cinzel text-black font-bold text-xl">{price}</h4>
       </div>			  
     </div>
   )
