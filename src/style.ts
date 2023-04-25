@@ -2,7 +2,9 @@ const styles = {
     boxWidth: "xl:max-w-[1280px] w-full",
   
     heading2: "font-cinzel font-black xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
+    headingS2: "font-sedgwick font-black xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
     heading2Black: "font-cinzel font-black xs:text-[48px] text-[40px] text-black xs:leading-[76.8px] leading-[66.8px] w-full",
+    headingS2Black: "font-sedgwick font-black xs:text-[48px] text-[40px] text-black xs:leading-[76.8px] leading-[66.8px] w-full",
     paragraph: "font-cinzel font-normal text-dimWhite text-[18px] leading-[30.8px]",
     paragraphBlack: "font-cinzel font-normal text-black text-[18px] leading-[30.8px]",
   

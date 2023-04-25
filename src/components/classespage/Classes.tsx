@@ -1,4 +1,4 @@
-import { man_front_gloves, ring_fight } from '../../assets'
+import { man_front_gloves } from '../../assets'
 import styles from '../../style'
 import Footer from '../Footer'
 import EveryoneWelcome from './EveryoneWelcome'
@@ -7,13 +7,15 @@ import Praise from './Praise'
 const Classes = () => {
   return (
     <div className='flex flex-col bg-white'>
-      <div className={`${styles.flexCenter} py-20 text-9xl bg-black`}>
+      <div className={`${styles.flexCenter} py-14 text-9xl bg-black`}>
         <h6 className='font-sedgwick font-extrabold text-white'>Classes</h6>
       </div>
       <div className='flex flex-col'>
-        <div className='bg-black'>
-        <img src={man_front_gloves} alt='man-standing-infront-gloves' className='w-full p-6 object-contain' />
-          <p className='text-dimWhite font-cinzel text-justify'>
+        <div className={`${styles.flexCenter} flex-col bg-black`}>
+          <div className='flex justify-center py-6'>
+            <img src={man_front_gloves} alt='man-standing-infront-gloves' className='p-6 object-contain' />
+          </div>
+          <p className='text-dimWhite font-cinzel text-lg max-w-7xl text-justify mb-10 mx-6'>
             <span>Join the best boxing classes in the world, taught by world class boxers </span>
             <span className='font-sedgwick'>Gojou, Baki </span>
             <span> and other amazing coaches. &nbsp; We have been in the industry for over 50 years, 

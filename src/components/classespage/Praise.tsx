@@ -1,10 +1,11 @@
 import { ring_fight } from '../../assets'
+import styles, { layout } from '../../style'
 
 const Praise = () => {
   return (
-    <div className='flex flex-row bg-white py-12 pl-6 justify-between'>
-      <div className='flex flex-col'>
-        <h2 className='font-sedgwick font-medium text-6xl mb-8'>Why we are the best</h2>
+    <section id='praise' className={`${layout.section} bg-white pl-6`}>
+      <div className={`${layout.sectionInfo} px-10`}>
+        <h2 className={`${styles.headingS2Black} mb-4`}>Why we are the best</h2>
         <ul className='font-cinzel text-lg space-y-8'>
           <li>World class coaches</li>
           <li>Cutting edge training facility</li>
@@ -14,8 +15,8 @@ const Praise = () => {
           <li>Official workshops hosted on the facility by the World Champion </li>
         </ul>
 			</div>
-      <img src={ring_fight} alt='ring-fight' />
-    </div>
+      <img src={ring_fight} alt='ring-fight' className='object-contain' />
+    </section>
   )
 }
 
