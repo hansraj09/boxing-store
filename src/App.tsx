@@ -1,25 +1,34 @@
-import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Home from "./components/homepage/Home";
 import Navbar from "./components/navigation/Navbar";
 import Classes from './components/classespage/Classes';
 import Contact from './components/Contact';
 import Store from './components/storepage/Store';
+import { useLayoutEffect } from 'react';
+import { useLocation } from "react-router-dom";
 
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path="/" element={<Navbar />}>
-      <Route index element={<Home />} />
-      <Route path="classes" element={<Classes />} />
-      <Route path="contact" element={<Contact />} />
-      <Route path="Store" element={<Store />} />
-      <Route path="*" element={<Home />} />
-    </Route>
-  )
-)
+function useScrollToTop() {
+  const { pathname } = useLocation();
+
+  useLayoutEffect(() => {
+    setTimeout(() => window.scrollTo(0, 0), 50);
+  }, [pathname]);
+}
 
 const App = () => {
+
+  useScrollToTop();
+
   return (
-    <RouterProvider router={router} />
+      <Routes >
+        <Route path="/" element={<Navbar />}>
+          <Route index element={<Home />} />
+          <Route path="classes" element={<Classes />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="store" element={<Store />} />
+          <Route path="*" element={<Home />} />
+        </Route>
+      </Routes>
   )
 }
 
