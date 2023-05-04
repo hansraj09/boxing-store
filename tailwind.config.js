@@ -4,6 +4,22 @@ export default {
   mode: "jit",
   theme: {
     extend: {
+      animation: {
+        slide_from_right: 'slide_from_right 1s ease-in-out forwards',
+        slide_from_right_delay: 'slide_from_right 1s ease-in-out 300ms forwards',
+        slide_from_left: 'slide_from_left 1s ease-in-out forwards',
+        slide_from_left_delay: 'slide_from_left 1s ease-in-out 300ms forwards',
+      },
+      keyframes: {
+        slide_from_right: {
+          '0%': { opacity: 0, transform: 'translateX(100%)' },
+          '100%': { opacity: 1, transform: 'translateX(0%)' }
+        },
+        slide_from_left: {
+          '0%': { opacity: 0, transform: 'translateX(-100%)' },
+          '100%': { opacity: 1, transform: 'translateX(0%)' }
+        },
+      },
       colors: {
         primary: "#00040f",
         secondary: "#00f6ff",

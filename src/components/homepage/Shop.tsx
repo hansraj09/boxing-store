@@ -1,13 +1,20 @@
+import { useInView } from "react-intersection-observer";
+
 import { red_gloves } from '../../assets'
 import styles, { layout } from '../../style'
 import Button from './Button'
 
 const Shop = () => {
+
+  const { ref: pRef, inView: pVisible } = useInView({ triggerOnce: true }); 
+  const { ref: hRef, inView: hVisible } = useInView({ triggerOnce: true }); 
+
+
   return (
     <section id='home-shop' className={`${layout.section} bg-white text-black space-x-6`}>
 			<div className={`${layout.sectionInfo} px-12`}>
-				<h2 className={styles.heading2Black}>Train in comfort and style</h2>
-				<p className={`${styles.paragraphBlack} mt-2 text-justify`}>
+				<h2 ref={hRef} className={`${styles.heading2Black} ${hVisible ? 'animate-slide_from_left' : ''}`}>Train in comfort and style</h2>
+				<p ref={pRef} className={`${styles.paragraphBlack} mt-2 text-justify opacity-0 ${pVisible ? 'animate-slide_from_left_delay' : ''}`}>
 					<span>
 						The latest summer collection just launched, complete with a new line 
 						of performance gloves, 

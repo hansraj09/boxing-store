@@ -1,16 +1,21 @@
+import { useInView } from "react-intersection-observer";
+
 import styles from "../../style";
 import Logo from "./Logo";
 import Stats from "./Stats";
 
 const Hero = () => {
+
+  const { ref: pRef, inView: pVisible } = useInView({ triggerOnce: true }); 
+
   return (
     <section id="home-hero" className={`flex md:flex-row flex-col ${styles.paddingY} bg-black text-white`}>
         <div className={`flex-1 flex-col ${styles.flexCenter}`}>
-          <div className={`${styles.flexCenter} z-10`}>
+          <div className={`${styles.flexCenter} z-10 py-4`}>
             <Logo />
           </div>
-          <div className="py-12 px-64 font-cinzel">
-            <p className={`${styles.paragraph} max-w-3xl text-justify`}>
+          <div className={`py-14 px-64 font-cinzel opacity-0 ${pVisible ? 'animate-slide_from_right' : ''}`}>
+            <p ref={pRef} className={`${styles.paragraph} max-w-3xl text-justify`}>
               <span className="font-sedgwick text-2xl">HKV</span>
               <span> Gloves, a </span>
               <span className="font-sedgwick text-2xl">4x</span>

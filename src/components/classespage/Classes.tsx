@@ -1,10 +1,16 @@
+import { useState } from 'react'
 import { man_front_gloves } from '../../assets'
 import styles from '../../style'
 import Footer from '../Footer'
 import EveryoneWelcome from './EveryoneWelcome'
 import Praise from './Praise'
+import ApplicationModal from './ApplicationModal'
+import Button from '../homepage/Button'
 
 const Classes = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className='flex flex-col bg-white'>
       <div className={`${styles.flexCenter} py-14 text-9xl bg-black`}>
@@ -30,11 +36,16 @@ const Classes = () => {
               to reserve your spot, or book a tour of our facility and attend a trial lesson!  
             </span>
           </p>
+          <div onClick={() => setIsOpen(true)}>
+            <Button style='mb-14' text='Enroll Now' />
+          </div>
         </div>
         <Praise />
         <EveryoneWelcome />
         <Footer />
       </div>
+
+      <ApplicationModal isOpen={isOpen} setIsOpen={setIsOpen} />
     </div>
   )
 }

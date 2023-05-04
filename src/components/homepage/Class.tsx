@@ -1,16 +1,22 @@
+import { useInView } from "react-intersection-observer";
+
 import { man_black_bg } from '../../assets'
 import styles, { layout } from '../../style'
 import Button from './Button'
 
 const Class = () => {
+
+  const { ref: pRef, inView: pVisible } = useInView({ triggerOnce: true }); 
+  const { ref: hRef, inView: hVisible } = useInView({ triggerOnce: true }); 
+
   return (
     <section id='home-class' className={`${layout.section} bg-black text-white space-x-4`}>
       <div>
         <img src={man_black_bg} alt='Man boxing stance' />
       </div>
       <div className={`${layout.sectionInfo} px-12`}>
-        <h2 className={styles.heading2}>Become a legend in the ring</h2>
-          <p className={`${styles.paragraph} mt-2 text-justify`}>
+        <h2 ref={hRef} className={`${styles.heading2} ${hVisible ? 'animate-slide_from_right' : ''} opacity-0`}>Become a legend in the ring</h2>
+          <p ref={pRef} className={`${styles.paragraph} mt-2 text-justify opacity-0 ${hVisible ? 'animate-slide_from_right_delay' : ''}`}>
             <span>
               Join the best boxing classes in the field, taught by world-class 
               coaches, in world-class training facilities.  We have everything,
