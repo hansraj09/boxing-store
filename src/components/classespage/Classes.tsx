@@ -7,28 +7,33 @@ import Praise from './Praise'
 import ApplicationModal from './ApplicationModal'
 import Button from '../homepage/Button'
 import { Outlet } from 'react-router-dom'
+import { useInView } from 'react-intersection-observer'
 
 const Classes = () => {
 
   const [isOpen, setIsOpen] = useState(false);
 
+  const { ref: pRef, inView: pVisible } = useInView({  triggerOnce: true });
+  const { ref: hRef, inView: hVisible } = useInView({  triggerOnce: true });
+
   const onClick = () => {
     setIsOpen(true);
   }
   
-
   return (
     <>
-      <div className='flex flex-col bg-white'>
+      <div className='flex flex-col bg-white overflow-x-hidden'>
         <div className={`${styles.flexCenter} py-14 text-9xl bg-black`}>
-          <h6 className='font-sedgwick font-extrabold text-white'>Classes</h6>
+          <h6 ref={hRef} className={`font-sedgwick font-extrabold text-white 
+            ${hVisible ? 'animate-slide_from_right' : ''}`}>Classes</h6>
         </div>
         <div className='flex flex-col'>
           <div className={`${styles.flexCenter} flex-col bg-black`}>
             <div className='flex justify-center py-6'>
-              <img src={man_front_gloves} alt='man-standing-infront-gloves' className='p-6 object-contain' />
+              <img src={man_front_gloves} alt='man-standing-infront-gloves' className='p-6 object-contain h-[55rem]' />
             </div>
-            <p className='text-dimWhite font-cinzel text-lg max-w-7xl text-justify mb-10 mx-6'>
+            <p ref={pRef} className={`text-dimWhite font-cinzel text-lg max-w-7xl text-justify mb-10 mx-6
+              ${pVisible ? 'animate-slide_from_right' : ''}`}>
               <span>Join the best boxing classes in the world, taught by world class boxers </span>
               <span className='font-sedgwick'>Gojou, Baki </span>
               <span> and other amazing coaches. &nbsp; We have been in the industry for over 50 years, 

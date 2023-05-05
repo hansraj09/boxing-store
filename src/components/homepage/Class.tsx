@@ -4,7 +4,6 @@ import { useInView } from "react-intersection-observer";
 import { man_black_bg } from '../../assets'
 import styles, { layout } from '../../style'
 import Button from './Button'
-import { useLayoutEffect } from "react";
 
 const Class = () => {
 
