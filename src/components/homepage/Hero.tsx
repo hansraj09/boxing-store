@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <section id="home-hero" className={`flex md:flex-row flex-col ${styles.paddingY} bg-black text-white`}>
         <div className={`flex-1 flex-col ${styles.flexCenter}`}>
-          <div className={`${styles.flexCenter} z-10 py-4`}>
+          <div className={`${styles.flexCenter} py-4`}>
             <Logo />
           </div>
           <div className={`py-14 px-64 font-cinzel opacity-0 ${pVisible ? 'animate-slide_from_right' : ''}`}>

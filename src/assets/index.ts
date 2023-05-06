@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import menu from "./menu.svg";
+import close from "./close.svg";
 import arrowUp from "./arrow-up.svg";
 import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";
@@ -22,6 +23,7 @@ import training_hands from "./training_hands.jpg";
 export {
   logo,
   menu,
+  close,
   arrowUp,
   facebook,
   instagram,

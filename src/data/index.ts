@@ -64,23 +64,23 @@ export const footerLinks = [
       links: [
         {
           name: "HKV 1",
-          link: "https://www.hkvgloves.com/store/hkv1",
+          link: "https://www.hkvgloves.com/store/",
         },
         {
           name: "HKV 2",
-          link: "https://www.hkvgloves.com/store/hkv2",
+          link: "https://www.hkvgloves.com/store/",
         },
         {
           name: "HKV 3",
-          link: "https://www.hkvgloves.com/store/hkv3",
+          link: "https://www.hkvgloves.com/store/",
         },
         {
           name: "HKV 4",
-          link: "https://www.hkvgloves.com/store/hkv4",
+          link: "https://www.hkvgloves.com/store/",
         },
         {
           name: "HKV X",
-          link: "https://www.hkvgloves.com/store/hkvx",
+          link: "https://www.hkvgloves.com/store/",
         },
       ],
     },
@@ -89,11 +89,11 @@ export const footerLinks = [
       links: [
         {
           name: "Help Center",
-          link: "https://www.hkvgloves.com/help/",
+          link: "https://www.hkvgloves.com/classes/",
         },
         {
           name: "Become a Partner",
-          link: "https://www.hkvgloves.com/become-a-partner/",
+          link: "https://www.hkvgloves.com/classes/",
         },
       ],
     },
