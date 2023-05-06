@@ -1,13 +1,17 @@
+import { useInView } from 'react-intersection-observer';
 import { logo } from '../assets'
 import { footerLinks, socialMedia } from '../data'
 import styles from '../style'
 
 
 const Footer = () => {
+
+  const { ref: imgRef, inView: imgVisible } = useInView({  });
+
   return (
     <section className={`${styles.flexCenter} sm:pt-16 pt-6 pb-6 flex-col bg-white mx-4`}>
       <div className={`${styles.flexCenter} md:flex-row flex-col mb-8 w-full`}>
-        <div className='flex flex-1 flex-col justify-start ml-10'>
+        <div ref={imgRef} className={`flex flex-1 flex-col justify-start ml-10 opacity-0 transition duration-1000 ${imgVisible ? 'opacity-100' : ''}`}>
           <img src={logo} alt='logo' className='object-contain w-48' />
         </div>
 

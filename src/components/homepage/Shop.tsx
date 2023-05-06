@@ -32,7 +32,7 @@ const Shop = () => {
 				</p>
 				<Button text='Shop now' style='mt-10 mb-10' onClick={onClick} />
 			</div>
-			<div className=''>
+			<div className='shadow-2xl'>
 				<img src={red_gloves} alt='Red Gloves' />
 			</div>
     </section>

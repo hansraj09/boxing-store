@@ -3,13 +3,18 @@ import Card from './Card'
 import styles from '../../style'
 import Footer from '../Footer'
 import { Outlet } from 'react-router-dom'
+import { useInView } from 'react-intersection-observer'
 
 const Store = () => {
+
+  const { ref: h1Ref, inView: h1Visible } = useInView({ triggerOnce: true });
+  const { ref: h2Ref, inView: h2Visible } = useInView({ triggerOnce: true });
+
   return (
     <>
-      <div className={`flex flex-col bg-white`}>
+      <div className={`flex flex-col bg-white overflow-x-hidden`}>
         <div className={`${styles.flexCenter} py-20 text-9xl bg-black`}>
-          <h6 className='font-sedgwick font-extrabold text-white'>The Shop</h6>
+          <h6 ref={h1Ref} className={`font-sedgwick font-extrabold text-white ${h1Visible ? 'animate-slide_from_right' : ''}`}>The Shop</h6>
         </div>
         <div className='flex flex-row flex-wrap justify-between gap-4 mx-6 py-6'>
           {storeItems.map((item, index) => (
@@ -26,7 +31,7 @@ const Store = () => {
           ))}
         </div>
         <div className='py-10 bg-black'>
-          <h2 className='font-cinzel font-semibold text-lg text-center text-white'>
+          <h2 ref={h2Ref} className={`font-cinzel font-semibold text-lg text-center text-white ${h2Visible ? 'animate-slide_from_right' : ''}`}>
             Showing {storeItems.length} out of {storeItems.length} products
           </h2>
         </div>

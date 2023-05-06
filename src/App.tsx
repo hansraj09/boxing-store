@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from "./components/homepage/Home";
 import Navbar from "./components/navigation/Navbar";
 import Classes from './components/classespage/Classes';
-import Contact from './components/Contact';
+import Contact from './components/contactpage/Contact';
 import Store from './components/storepage/Store';
 import { useLayoutEffect } from 'react';
 import { useLocation } from "react-router-dom";

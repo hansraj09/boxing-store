@@ -5,12 +5,12 @@ import styles, { layout } from '../../style'
 const EveryoneWelcome = () => {
 
   const { ref: hRef, inView: hVisible } = useInView({ triggerOnce: true });
-  const { ref: ul1Ref, inView: ul1Visible } = useInView({  triggerOnce: true });
-  const { ref: ul2Ref, inView: ul2Visible } = useInView({  triggerOnce: true });
-  const { ref: ul3Ref, inView: ul3Visible } = useInView({  triggerOnce: true });
-  const { ref: ul4Ref, inView: ul4Visible } = useInView({  triggerOnce: true });
-  const { ref: ul5Ref, inView: ul5Visible } = useInView({  triggerOnce: true });
-  const { ref: ul6Ref, inView: ul6Visible } = useInView({  triggerOnce: true });
+  const { ref: ul1Ref, inView: ul1Visible } = useInView({ triggerOnce: true });
+  const { ref: ul2Ref, inView: ul2Visible } = useInView({ triggerOnce: true });
+  const { ref: ul3Ref, inView: ul3Visible } = useInView({ triggerOnce: true });
+  const { ref: ul4Ref, inView: ul4Visible } = useInView({ triggerOnce: true });
+  const { ref: ul5Ref, inView: ul5Visible } = useInView({ triggerOnce: true });
+  const { ref: ul6Ref, inView: ul6Visible } = useInView({ triggerOnce: true });
 
   return (
     <section id='everyone-welcome' className={`${layout.section} bg-black`}>
