@@ -14,7 +14,7 @@ const Hero = () => {
           <div className={`${styles.flexCenter} py-4`}>
             <Logo />
           </div>
-          <div className={`py-14 px-64 font-cinzel opacity-0 ${pVisible ? 'animate-slide_from_right' : ''}`}>
+          <div className={`py-14 sm:px-64 px-16 font-cinzel opacity-0 ${pVisible ? 'animate-slide_from_right' : ''}`}>
             <p ref={pRef} className={`${styles.paragraph} max-w-3xl text-justify`}>
               <span className="font-sedgwick text-2xl">HKV</span>
               <span> Gloves, a </span>
@@ -34,7 +34,5 @@ const Hero = () => {
     </section>
   )
 }
-
-// Add a background with a glow grandient
 
 export default Hero

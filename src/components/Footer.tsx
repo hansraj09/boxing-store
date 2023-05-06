@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <section className={`${styles.flexCenter} sm:pt-16 pt-6 pb-6 flex-col bg-white mx-4`}>
       <div className={`${styles.flexCenter} md:flex-row flex-col mb-8 w-full`}>
-        <div ref={imgRef} className={`flex flex-1 flex-col justify-start ml-10 opacity-0 transition duration-1000 ${imgVisible ? 'opacity-100' : ''}`}>
+        <div ref={imgRef} className={`flex flex-1 flex-col justify-start lg:ml-10 opacity-0 transition duration-1000 ${imgVisible ? 'opacity-100' : ''}`}>
           <img src={logo} alt='logo' className='object-contain w-48' />
         </div>
 

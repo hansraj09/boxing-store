@@ -14,7 +14,7 @@ const EveryoneWelcome = () => {
 
   return (
     <section id='everyone-welcome' className={`${layout.section} bg-black`}>
-      <img src={girl_training} alt='ring-fight' className='object-contain pr-6' />
+      <img src={girl_training} alt='ring-fight' className='object-contain pr-6 md:pt-60 lg:pt-0' />
       <div className={`${layout.sectionInfo} px-10`}>
         <h2 ref={hRef} className={`${styles.headingS2} mb-4 ${hVisible ? 'animate-slide_from_right' : ''}`}>Everyone is welcome</h2>
         <ul className='font-cinzel text-dimWhite text-lg space-y-8'>

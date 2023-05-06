@@ -32,14 +32,11 @@ const Shop = () => {
 				</p>
 				<Button text='Shop now' style='mt-10 mb-10' onClick={onClick} />
 			</div>
-			<div className='shadow-2xl'>
+			<div className='xl:shadow-2xl'>
 				<img src={red_gloves} alt='Red Gloves' />
 			</div>
     </section>
   )
 }
-
-// col 2 - image, gradient, shadow, hover animation (glow animation)
-// glow effect on HKV X, clicking on it takes you to the product in shop
 
 export default Shop

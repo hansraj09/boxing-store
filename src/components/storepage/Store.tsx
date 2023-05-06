@@ -13,10 +13,10 @@ const Store = () => {
   return (
     <>
       <div className={`flex flex-col bg-white overflow-x-hidden`}>
-        <div className={`${styles.flexCenter} py-20 text-9xl bg-black`}>
+        <div className={`${styles.flexCenter} py-20 xs:text-9xl text-7xl bg-black`}>
           <h6 ref={h1Ref} className={`font-sedgwick font-extrabold text-white ${h1Visible ? 'animate-slide_from_right' : ''}`}>The Shop</h6>
         </div>
-        <div className='flex flex-row flex-wrap justify-between gap-4 mx-6 py-6'>
+        <div className='flex flex-row flex-wrap sm:justify-between justify-center gap-4 mx-6 py-6'>
           {storeItems.map((item, index) => (
             <div key={index}>
               <Card 

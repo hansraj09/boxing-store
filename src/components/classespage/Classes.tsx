@@ -23,14 +23,14 @@ const Classes = () => {
   return (
     <>
       <div className='flex flex-col bg-white overflow-x-hidden'>
-        <div className={`${styles.flexCenter} py-14 text-9xl bg-black`}>
+        <div className={`${styles.flexCenter} py-14 xs:text-9xl text-7xl bg-black`}>
           <h6 ref={hRef} className={`font-sedgwick font-extrabold text-white 
             ${hVisible ? 'animate-slide_from_right' : ''}`}>Classes</h6>
         </div>
         <div className='flex flex-col'>
           <div className={`${styles.flexCenter} flex-col bg-black`}>
-            <div className='flex justify-center py-6'>
-              <img src={man_front_gloves} alt='man-standing-infront-gloves' className='p-6 object-contain h-[55rem]' />
+            <div className='flex justify-center lg:py-6 pb-6'>
+              <img src={man_front_gloves} alt='man-standing-infront-gloves' className='p-6 object-contain lg:h-[55rem]' />
             </div>
             <p ref={pRef} className={`text-dimWhite font-cinzel text-lg max-w-7xl text-justify mb-10 mx-6
               ${pVisible ? 'animate-slide_from_right' : ''}`}>

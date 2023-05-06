@@ -15,7 +15,7 @@ const Contact = () => {
 
   return (
     <div className='flex flex-col bg-white overflow-x-hidden'>
-      <div className={`${styles.flexCenter} py-14 text-9xl bg-black`}>
+      <div className={`${styles.flexCenter} py-14 xs:text-9xl text-7xl bg-black`}>
         <h6 ref={hRef} className={`font-sedgwick font-extrabold text-white 
           ${hVisible ? 'animate-slide_from_right' : ''}`}>Contact</h6>
       </div>
@@ -27,7 +27,7 @@ const Contact = () => {
          <div className='font-sedgwick text-lg'>Loading...</div> 
          : 
          <div className='flex flex-col items-center py-10'>
-           <GoogleMap zoom={15} center={center} mapContainerClassName='w-[75%] h-[100vh]'>
+           <GoogleMap zoom={15} center={center} mapContainerClassName='w-[75%] sm:h-[100vh] h-[50vh]'>
             <MarkerF position={center} />
            </GoogleMap>
          </div>}

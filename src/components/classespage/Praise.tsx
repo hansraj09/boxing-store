@@ -25,7 +25,7 @@ const Praise = () => {
           <li ref={ul6Ref} className={`opacity-0 ${ul6Visible ? 'animate-slide_from_right_delay' : ''}`}>Official workshops hosted on the facility by the World Champion </li>
         </ul>
 			</div>
-      <img src={ring_fight} alt='ring-fight' className='object-contain shadow-2xl' />
+      <img src={ring_fight} alt='ring-fight' className='object-contain md:pt-40 lg:pt-0 xl:shadow-2xl' />
     </section>
   )
 }
