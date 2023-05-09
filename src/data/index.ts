@@ -43,19 +43,19 @@ export const footerLinks = [
       links: [
         {
           name: "Home",
-          link: "https://www.hkvgloves.com/home/",
+          link: "https://hansrajkv.me/home/",
         },
         {
           name: "Store",
-          link: "https://www.hkvgloves.com/store/",
+          link: "https://hansrajkv.me/store/",
         },
         {
           name: "Classes",
-          link: "https://www.hkvgloves.com/classes/",
+          link: "https://hansrajkv.me/classes/",
         },
         {
           name: "Contact",
-          link: "https://www.hkvgloves.com/contact/",
+          link: "https://hansrajkv.me/contact/",
         },
       ],
     },
@@ -64,23 +64,23 @@ export const footerLinks = [
       links: [
         {
           name: "HKV 1",
-          link: "https://www.hkvgloves.com/store/",
+          link: "https://hansrajkv.me/store/",
         },
         {
           name: "HKV 2",
-          link: "https://www.hkvgloves.com/store/",
+          link: "https://hansrajkv.me/store/",
         },
         {
           name: "HKV 3",
-          link: "https://www.hkvgloves.com/store/",
+          link: "https://hansrajkv.me/store/",
         },
         {
           name: "HKV 4",
-          link: "https://www.hkvgloves.com/store/",
+          link: "https://hansrajkv.me/store/",
         },
         {
           name: "HKV X",
-          link: "https://www.hkvgloves.com/store/",
+          link: "https://hansrajkv.me/store/",
         },
       ],
     },
@@ -89,11 +89,11 @@ export const footerLinks = [
       links: [
         {
           name: "Help Center",
-          link: "https://www.hkvgloves.com/classes/",
+          link: "https://hansrajkv.me/classes/",
         },
         {
           name: "Become a Partner",
-          link: "https://www.hkvgloves.com/classes/",
+          link: "https://hansrajkv.me/classes/",
         },
       ],
     },
